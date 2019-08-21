@@ -14,6 +14,7 @@ void main() {
     url.text = 'http://farragofiction.com:8500/TalkButlerBot?chatHandle=${pr(handle.value)}&input=${pr(message.value)}';
     });
   output.append(submit);
+  output.append(url);
 }
 String pr(String str){
   str.replaceAll(' ', '+');
