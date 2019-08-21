@@ -27,7 +27,6 @@ String pr(String input){
   var str = input;
   print('Replacing!');
   str = str.replaceAll('%', '%25');
-  str = str.replaceAll(' ', '+');
   str = str.replaceAll('!', '%21');
   str = str.replaceAll('#', '%23');
   str = str.replaceAll('\$', '%24');
@@ -46,5 +45,6 @@ String pr(String input){
   str = str.replaceAll('@', '%40');
   str = str.replaceAll('[', '%5B');
   str = str.replaceAll(']', '%5D');
+  str = str.replaceAll(' ', '+');
   return str;
 }
